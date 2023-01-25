@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>String into sentence case</title>
+    <script>
+        function SentenceCase (str) {
+            var firstChar = str.CharAt(0);
+            var restChar =  str.substring(1);
+            return firstChar.toUpperCase()+ restChar.toLowerCase();
+        }
+            var msg = "weLcOMe to jaVascript"
+            document.write(msg, "<br>")
+            document.write(SentenceCase(msg));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

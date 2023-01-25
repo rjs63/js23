@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check whether input is string or not</title>
+    <script>
+        is_string = function(input){
+           if(Object.prototype.toString.call(input) === '[object String]')
+             return true;
+           else
+             return false;
+        };
+        console.log (is_string('H3dolly'));
+        console.log (is_string([1,4,3,0]));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
